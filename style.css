@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    background-color: brown;
+    position: relative;
+}
+  header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60px; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(222, 190, 64, 0.5));
+    bottom: 0;
+    left: 0;
+    pointer-events: none; 
+  }
+  body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+    background-color: rgba(250, 235, 215, 0.767);
+    border: solid 1em brown;
+    background: radial-gradient(circle at 50% 50%, rgb(200, 135, 71), rgba(228, 232, 191, 0.842));
+  }
+  .container{
+    padding: 1em;
+    margin: 0 auto;
+  }
+  .team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    color: brown;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .miembro{
+   background-color: ;
+   background: linear-gradient( #c6ce95, rgba(6, 28, 77, 0.845));
+    text-align: center;
+    margin: 2em 2em;
+    padding: .5em;
+    border: .3em double rgb(224, 180, 58);
+    border-radius: 50%;
+    box-shadow: 4px 4px 6px;
+  }
+  .foto{
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .miembro img{
+    width: 200px; 
+    height: 200px; 
+    transition: transform 0.5s;
+  }
+#a:hover{
+  transform: scale(1.2) rotate(20deg);
+  transition: transform 0.3s;
+
+  }
+  #b:hover{
+    transform: scale(1.2) rotate(-20deg);
+    transition: transform 0.3s;
+  }
+  .logo img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-top: 2em;
+  }
+  header{
+    text-align: center;
+  }
+  h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(21, 27, 83);
+  }
+  h1:hover{
+    color: rgb(231, 205, 71);
+  }
+  .nombre{
+    background-color: rgba(250, 235, 215, 0.808);
+  }
+  footer{
+    color:brown;
+    text-align-last: right;
+    background-color: rgba(6, 28, 77, 0.874);
+  }
+  #cargo{
+   color: antiquewhite;
+   font-size: smaller;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .miembro:hover{
+    background: linear-gradient(#3c140b, #f81818);
+    border: .3em double rgb(21, 40, 159);
+    border-radius: 50%;
+    box-shadow: 4px 4px 6px rgb(29, 51, 124);
+  }
+  .nombre:hover{
+    color:rgb(20, 27, 66);
+  }
